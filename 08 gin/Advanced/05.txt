@@ -1,0 +1,3 @@
+Cookies = Small data send by server to the client, less secure
+Session = Large data, stored in server, more secure 
+

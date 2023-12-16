@@ -1,0 +1,94 @@
+todo-app/
+|-- cmd/
+|   `-- main.go
+|-- internal/
+|   |-- app/
+|   |   |-- handler/
+|   |   |   `-- todo_handler.go
+|   |   |-- model/
+|   |   |   `-- todo.go
+|   |   |-- repository/
+|   |   |   `-- todo_repository.go
+|   |   `-- usecase/
+|   |       `-- todo_usecase.go
+|   |-- interfaces/
+|   |   `-- web/
+|   |       `-- handler/
+|   |           `-- todo_handler.go
+|   `-- infrastructure/
+|       `-- persistence/
+|           `-- todo_repository.go
+|-- migrations/
+|-- static/
+|-- templates/
+|-- .env
+|-- go.mod
+|-- go.sum
+|-- main.go
+|-- README.md
+
+
+
+
+Model = Database information 
+repository = It contains the crud of models 
+ex- repository
+    -> repository.go 
+    -> user_repository.go
+    -> product_repository.go 
+
+usecase = This is a file for mentioning the functionality, not related to database but other functionality
+it can be written this way 
+ex - usecase 
+    -> usecase.go 
+    -> user_usecase.go 
+    -> product_usecase.go 
+
+
+handlers = methods of models (ex - canDelete())
+
+persistence = It initialize the database 
+
+The Repository Layer (e.g., user_repository.go, post_repository.go, comment_repository.go) contains functions like Create, Read, Update, Delete specific to each entity.
+
+The Persistence Layer (e.g., database.go in the persistence package) contains the initialization logic and methods to interact with the underlying data storage. In the provided example, it uses an in-memory data structure, but in a real-world scenario, it would involve connecting to a database.
+
+
+
+ecommerce/
+|-- main.go
+|-- cmd/
+|   |-- web/
+|-- internal/
+|   |-- app/
+|   |   |-- usecase/
+|   |   |   |-- user_usecase.go
+|   |   |   |-- product_usecase.go
+|   |   |   |-- order_usecase.go
+|   |   |-- repository/
+|   |   |   |-- user_repository.go
+|   |   |   |-- product_repository.go
+|   |   |   |-- order_repository.go
+|   |   |-- entity/
+|   |   |   |-- user.go
+|   |   |   |-- product.go
+|   |   |   |-- order.go
+|   |-- delivery/
+|   |   |-- web/
+|   |   |   |-- handlers/
+|   |   |   |   |-- user_handler.go
+|   |   |   |   |-- product_handler.go
+|   |   |   |   |-- order_handler.go
+|   |   |-- database/
+|   |   |   |-- user_repository.go
+|   |   |   |-- product_repository.go
+|   |   |   |-- order_repository.go
+|-- pkg/
+|-- migrations/
+|-- config/
+
+
+
+
+
+

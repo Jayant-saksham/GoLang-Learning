@@ -1,0 +1,14 @@
+URI = URL + information about the resource on the basis of name 
+or location 
+
+1. URI Examples:
+   - [tel:+1234567890](tel:+1234567890)
+     - A URI representing a telephone number. It can be used to initiate a phone call.
+   - [geo:37.7749,-122.4194](geo:37.7749,-122.4194)
+     - A URI representing geographical coordinates. It can be used to open a map application with the specified location.
+
+2. URL Examples:
+   - [https://en.wikipedia.org/wiki/Clean_architecture](https://en.wikipedia.org/wiki/Clean_architecture)
+     - A URL pointing to the Wikipedia page on Clean Architecture. It includes the scheme (`https`), domain (`en.wikipedia.org`), and path (`/wiki/Clean_architecture`).
+   - [https://www.google.com/search?q=golang+tutorial](https://www.google.com/search?q=golang+tutorial)
+     - A URL for a Google search for "golang tutorial." It includes the scheme, domain, path, and query parameter (`q=golang+tutorial`).

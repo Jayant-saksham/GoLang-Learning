@@ -1,0 +1,14 @@
+Authentication
+It means the entry insite the wesbite 
+Entry in the house 
+
+Authorization
+It means what we can do insite that house 
+or 
+Access 
+Authorization is implemented using midddleware
+
+
+gRPC (gRPC Remote Procedure Call) is an open-source remote procedure call (RPC) framework developed by Google. 
+It is designed to facilitate communication between distributed systems, allowing them to make remote procedure calls as 
+if they were local calls, regardless of the programming languages and platforms used by the systems.
